@@ -5,19 +5,19 @@ import { MyExpoModule } from './modules/my-module';
 import { MyNitroModule, MyCxxNitroModule } from './modules/nitro-module';
 import { MyTurboModule } from './modules/turbo-module/js'
 
-function testExpoModule() {
+function warmupExpoModule() {
   MyExpoModule.addNumbers(5, 13)
   MyExpoModule.addStrings('hello ', 'world')
 }
-function testNitroModule() {
+function warmupNitroModule() {
   MyNitroModule.addNumbers(5, 13)
   MyNitroModule.addStrings('hello ', 'world')
 }
-function testNitroCxxModule() {
+function warmupNitroCxxModule() {
   MyCxxNitroModule.addNumbers(5, 13)
   MyCxxNitroModule.addStrings('hello ', 'world')
 }
-function testTurboModule() {
+function warmupTurboModule() {
   MyTurboModule.addNumbers(5, 13)
   MyTurboModule.addStrings('hello ', 'world')
 }
@@ -25,10 +25,10 @@ function testTurboModule() {
 const runs = 100_000
 
 function runNumberBenchmark() {
-  testExpoModule()
-  testNitroModule()
-  testNitroCxxModule()
-  testTurboModule()
+  warmupExpoModule()
+  warmupNitroModule()
+  warmupNitroCxxModule()
+  warmupTurboModule()
   console.log('--------- BEGINNING NUMBER BENCHMARKS ---------')
   let expoTime = 0
   {
