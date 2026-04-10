@@ -5,7 +5,10 @@
   "react-native": "js/index",
   "source": "js/index",
   "files": [],
-  "keywords": ["react-native", "ios"],
+  "keywords": [
+    "react-native",
+    "ios"
+  ],
   "repository": "https://github.com/<your_github_handle>/rtn-cxx-calculator",
   "author": "Marc Rousavy <your_email@your_provider.com> (https://github.com/<your_github_handle>)",
   "license": "MIT",
@@ -21,9 +24,6 @@
   "codegenConfig": {
     "name": "MyCxxTurboModule",
     "type": "modules",
-    "jsSrcsDir": "js",
-    "android": {
-      "javaPackageName": "com.mrousavy"
-    }
+    "jsSrcsDir": "js"
   }
 }

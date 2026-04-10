@@ -3,7 +3,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTLinkingManager.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
-#include <MyCxxTurboModule/NativeMyCxxTurboModule.h>
+#import <MyCxxTurboModule/NativeMyCxxTurboModule.h>
 
 @implementation AppDelegate
 

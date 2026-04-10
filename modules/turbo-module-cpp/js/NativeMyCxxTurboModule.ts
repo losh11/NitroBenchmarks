@@ -5,4 +5,4 @@ export interface Spec extends TurboModule {
   addStrings(a: string, b: string): string;
 }
 
-export default TurboModuleRegistry.get<Spec>('MyCxxTurboModule') as Spec | null;
+export default TurboModuleRegistry.get<Spec>("MyCxxTurboModule");
